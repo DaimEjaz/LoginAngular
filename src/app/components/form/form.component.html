@@ -1,0 +1,15 @@
+<form class="form" (ngSubmit)="onSubmit()">
+    <app-form-control
+      labelInfo="Username"
+      inputInfo="username"
+      [isPassword]="false"
+    ></app-form-control>
+    <app-form-control
+      labelInfo="Password"
+      inputInfo="password"
+      [isPassword]="true" 
+    ></app-form-control>
+    <app-button text="Login" color="green" (btnClick)="onLogin()"></app-button>
+  </form>
+
+  <!-- Property binding => [], subjected to change properties -->
